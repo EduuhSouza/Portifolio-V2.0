@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="shortcut icon" href="fotos/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- DATA AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- javascript MENU MOBILE -->
+<script src="menu.js" defer></script>
+    <!-- FIM javascript MENU MOBILE -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduarda Souza</title>
+</head>
+<body>
+  
+
+<!-- Intro animada -->
+<div id="intro" class="intro">
+  <img src="fotos/logo.png" alt="Lobo dormindo pixel" />
+</div>
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const intro = document.getElementById('intro');
+      if (intro) {
+        intro.style.opacity = '0';
+        intro.style.transition = 'opacity 1s ease';
+        setTimeout(() => intro.remove(), 1000); // remove após o fade
+      }
+    }, 3000); // dura 3 segundos
+  });
+</script>
+
+<!-- CABEÇALHO--------------- -->
+    
+    <header class="header">
+        <div class="logo-img">
+        <img src="fotos/logo.png" alt="">
+    </div>
+
+    <nav class="navbar">
+       
+        <a href="#inicio"> Inicio </a>
+        <a href="#contato"> Contato </a>
+        <a href="#projetos"> Projetos </a>
+        <a href="#habilidades"> Habilidades </a>
+    </nav>
+
+
+    
+<!-------------- MOBILE -------------->
+
+<div class="btn-abrir-menu" id="btn-menu"> <!-- COMEÇO ABRIR MENU -->
+    <i class="fa-solid fa-bars"></i>
+</div> <!-- FINAL ABRIR MENU -->
+
+
+<div class="menu-mobile" id="menu-mobile"> <!-- COMEÇO MENU MOBILE-->
+    <div class="btn-fechar">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+
+    <nav class="mobile-nav">  <!-- COMEÇO NAVBAR MENU -->
+        
+        <a href="#inicio"> Inicio </a>
+        <a href="#contato"> Contato </a>
+        <a href="#projetos"> Projetos </a>
+        <a href="#habilidades"> Habilidades </a>
+
+    </nav> <!-- FINAL NAVBAR MENU -->
+    
+</div> <!-- FINAL MENU MOBILE-->
+<div class="overlay-menu" id="overlay-menu"></div>
+
+<!-- ------------FIM MOBILE------------ -->
+
+</header>
+
+<div class="main-container" id="inicio">
+
+    <div class="content">
+        <h1> Olá, eu sou <span> Eduarda Souza</span></h1>
+<br>
+        <p>Meu nome é Eduarda Souza e sou apaixonada por design e arte em geral. Tenho uma curiosidade constante e adoro aprender coisas novas, sempre buscando expandir meus conhecimentos e habilidades. Minha preferência é pela programação front-end, pois acredito que é a área onde posso unir minha criatividade com a tecnologia para criar experiências visuais incríveis e funcionais.</p>
+    
+
+    <!-- ICONES -->
+    <div class="icons-social">
+        <a href="https://www.linkedin.com/in/eduarda-souza-3157942b0/" class="icon1"> <i class="fa-brands fa-linkedin-in"></i></a>
+
+        <a href="https://www.instagram.com/souza.eduuh/" class="icon2"> <i class="fa-brands fa-instagram"></i></a>
+
+        <a href="https://github.com/EduuhSouza" class="icon3"> <i class="fa-brands fa-github"></i></a>
+    </div>
+    
+
+    <div class="btn-cv">
+  <button> <a class="btn-cv" href="curriculo/Curriculo.pdf" download="curriculo/Curriculo.pdf"> Currículo</a></button>
+</div>
+</div>
+
+    <!-------------- IMAGEM FOTO -------------->
+    <div class="img-foto">
+        <img src="fotos/foto.perfil.jpeg" alt="">
+    </div>
+</div>
+
+<!-------------- SOFTSKILLS -------------->
+<div class="conteiner-2" id="habilidades" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+    <div class="titulo-soft">
+        <h2> Soft Skills </h2>
+    </div>
+
+    <div class="icon">
+        <i class="fa-solid fa-comments">
+            <p>Comunicação</p></i>
+
+        <i class="fa-solid fa-people-group"><p>Trabalho em grupo</p></i>
+
+        <i class="fa-solid fa-arrows-to-circle">
+            <p>Foco</p></i>
+
+        <i class="fa-solid fa-lightbulb">
+            <p>Criatividade</p></i>
+
+  <i class="fa-solid fa-clipboard-check">
+    <p>Organização</p></i>
+
+    </div>
+</div>
+
+<!-------------- HARD SKILLS -------------->
+    <div class="titulo-soft" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <h2> Hard Skills </h2>
+    </div>
+
+    <div class="icon" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+
+        <i class="fa-brands fa-html5">
+            <p>HTML5</p>
+        </i>
+
+        <i class="fa-brands fa-css3-alt">
+            <p>CSS3</p>
+        </i>
+
+        <i class="fa-brands fa-js">
+            <p>JavaScript</p>
+        </i>
+
+        <!-- <i class="fa-brands fa-php">
+            <p>PHP</p>
+        </i> -->
+        
+        <i class="fa-brands fa-bootstrap">
+            <p>Bootstrap</p>
+        </i>
+
+        <!-- <i class="fa-brands fa-figma">
+            <p>Figma</p>
+        </i> -->
+
+    </div>
+
+</div>
+
+<!-------------- PARALLAX -------------->
+
+<div class="wrapper">
+        <section class="modulo parallax parallax-1">        
+        </section>
+
+        <section class="modulo content">
+            <div class="container">
+                <h3> "Sonhos exigem paciência no resultado e dedicação no processo" </h3>
+                
+            </div>
+    </section>
+    
+
+
+<!--------- CARDS PROJETOS | Codigo feito com auxilio do chatGPT------------>
+
+<div class="titulo-pr" id="projetos">
+    <h1> Projetos </h1>
+</div>
+
+ <div class="carousel-wrapper" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    <span class="arrow arrow-left" onclick="document.querySelector('.carousel').scrollLeft -= 300">&#10094;</span>
+    <span class="arrow arrow-right" onclick="document.querySelector('.carousel').scrollLeft += 300">&#10095;</span>
+
+    <!-- ALUMA -->
+    <div class="carousel">
+      <a href="#project1" class="card">
+        <img src="Foto.Sites.html.e.css/aluma.site.jpeg" alt="Projeto 1" />
+        <div class="card-content">
+          <h3>ALUMA - Site Informativo</h3>
+          <p>Assitente de Lógica de Uso para Memória e Aprendizado</p>
+        </div>
+      </a>
+
+      <!-- ADA -->
+      <a href="#project2" class="card">
+        <img src="Foto.Sites.html.e.css/ada.jpeg" alt="Projeto 2" />
+        <div class="card-content">
+          <h3>Ada Lovalace</h3>
+          <p>Site informativo sobre a mãe da programação</p>
+        </div>
+      </a>
+
+      <!-- OUTUBRO ROSA -->
+      <a href="#project3" class="card">
+        <img src="Foto.Sites.html.e.css/outubro.rosa.jpeg" alt="Projeto 3" />
+        <div class="card-content">
+          <h3>Outubro Rosa</h3>
+          <p>Site de conscientização sobre o Outubro Rosa</p>
+        </div>
+      </a>
+
+      <!-- LISTA DE TAREFAS-->
+      <a href="#project4" class="card">
+        <img src="Foto.Sites.html.e.css/lista.jpeg" alt="Projeto 3" />
+        <div class="card-content">
+          <h3>Lista de Tarefas</h3>
+          <p>Primeria vez testando o modo escuro</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Overlays de detalhes -->
+   <!-- aluma -->
+  <div id="project1" class="overlay">
+    <div class="overlay-content">
+      <a href="#projetos" class="close">&times;</a>
+      <img src="Foto.Sites.html.e.css/aluma.site.jpeg" alt="Projeto 1">
+      <h2>ALUMA - Assistente de Lógica de Uso para Memória e Aprendizado</h2>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+      </div>
+        <p>
+O projeto de Trabalho de Conclusão de Curso (TCC) desenvolvido na Fundação O Pão dos Pobres apresenta a ALUMA (Assistente de Lógica de Uso para Memória e Aprendizado), uma Inteligência Artificial voltada à área da educação, com o objetivo de democratizar o acesso ao conhecimento, facilitar o aprendizado e auxiliar professores, alunos e instituições de ensino em geral.
+
+   <h2>Objetivo:</h2> 
+    A ALUMA foi projetada para ser uma ferramenta de apoio didático e pedagógico, oferecendo uma interface interativa capaz de responder dúvidas, revisar conteúdos, sugerir atividades e reforçar a memorização por meio de uma lógica personalizada de uso. A IA é adaptável para escolas, cursos livres, ONGs educacionais e outras instituições que busquem inovação no processo de ensino-aprendizagem.
+<br><br>
+
+
+</p>
+
+    <div class="icons">
+        <a href="https://github.com/EduuhSouza/quiz"><i class="fa-brands fa-github"></i> </a>
+
+          <a href="https://eduuhsouza.github.io/Outubro-conscientiza.r/"><i class="fa-solid fa-globe"></i> </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- ADA -->
+  <div id="project2" class="overlay">
+    <div class="overlay-content">
+      <a href="#projetos" class="close">&times;</a>
+      <img src="Foto.Sites.html.e.css/ada.jpeg" alt="Projeto 2">
+      <h2>Ada Lovelace: A Mãe da Programação</h2>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+      </div>
+         <p>Este projeto foi desenvolvido em grupo como parte das atividades da disciplina de Desenvolvimento Pessoal e Social (DPS) na Fundação O Pão dos Pobres. O trabalho teve como objetivo resgatar e valorizar a trajetória de Ada Lovelace, figura histórica reconhecida como a primeira programadora da história da computação.
+<br><br>
+        Mais do que um simples estudo biográfico, o projeto buscou explorar o impacto da contribuição de Ada Lovelace no cenário atual da tecnologia, especialmente na formação de jovens em áreas da programação.
+
+   <h2>Objetivo:</h2> 
+    Destacar a importância de Ada Lovelace como pioneira na área da computação e refletir sobre o papel das mulheres na ciência e na tecnologia, promovendo a valorização da diversidade e o empoderamento feminino nas áreas técnicas.
+<br><br>
+
+    <h2>Diferenciais do Projeto:</h2>
+    <ul>
+        <li>Pesquisar a vida e as conquistas de Ada Lovelace.</li>
+
+        <li>Compreender o contexto histórico e científico em que ela viveu.</li>
+
+        <li>Discutir a invisibilidade feminina nas áreas tecnológicas ao longo da história.</li>
+
+        <li>Relacionar a contribuição de Ada com o cenário atual da programação.</li>
+    </ul>
+</p>
+
+      <div class="icons">
+           <a href="https://github.com/EduuhSouza/Ada-lovalace"><i class="fa-brands fa-github"></i> </a>
+          <a href="https://eduuhsouza.github.io/Ada-lovalace/"><i class="fa-solid fa-globe"></i> </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- OUTUBRO ROSA -->
+  <div id="project3" class="overlay">
+    <div class="overlay-content">
+      <a href="#projetos" class="close">&times;</a>
+      <img src="Foto.Sites.html.e.css/outubro.rosa.jpeg" alt="Projeto 3">
+      <h2>Outubro Rosa Conscientiza.r</h2>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+      </div>
+      <p>Este projeto foi desenvolvido como parte das atividades práticas na Fundação O Pão dos Pobres, com o objetivo de criar um site informativo voltado à campanha Outubro Rosa — um movimento internacional de conscientização para a prevenção e o diagnóstico precoce do câncer de mama.
+
+   <h2>Objetivo:</h2> 
+    Utilizar a tecnologia como ferramenta de impacto social, promovendo o acesso à informação de forma clara, acessível e visualmente atrativa, especialmente para públicos que muitas vezes têm pouco contato com ações de saúde preventiva.
+<br><br>
+
+    <h2>Diferenciais do Projeto:</h2>
+    <ul>
+        <li>Cores temáticas e ícones que reforçam a identidade do Outubro Rosa.</li>
+
+        <li>Navegação simples e acessível para públicos de todas as idades.</li>
+
+        <li>Linguagem inclusiva, objetiva e sensível ao tema.</li>
+
+        <li>Versão mobile responsiva, permitindo o acesso pelo celular.</li>
+    </ul>
+</p>
+
+      <div class="icons">
+         <a href="https://github.com/EduuhSouza/Outubro-conscientiza.r"><i class="fa-brands fa-github"></i> </a>
+          <a href="https://eduuhsouza.github.io/Outubro-conscientiza.r/"><i class="fa-solid fa-globe"></i> </a>
+    </div>
+    </div>
+  </div>
+
+  <!-- LISTA DE TAREFAS -->
+  <div id="project4" class="overlay">
+    <div class="overlay-content">
+      <a href="#projetos" class="close">&times;</a>
+      <img src="Foto.Sites.html.e.css/lista.jpeg" alt="Projeto 3">
+      <h2>Lista de Tarefas</h2>
+      <div class="technologies">
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span>
+      </div>
+      <p>Este projeto foi desenvolvido como parte do curso de Desenvolvimento Web Full Stack no Instituto da Oportunidade Social (IOS). Nele, criei uma lista de tarefas interativa e, como desafio pessoal, implementei pela primeira vez o modo escuro (dark mode), com a intenção de explorar novos conceitos de estilização com CSS.
+            
+            <h2>Objetivo:</h2>
+            A proposta principal era fazer uma atividade do curso com foco em JavaScript para desenvolver uma interface interativa que permitisse ao usuário adicionar, marcar como concluída e remover tarefas — tudo isso com a opção de alternar entre o modo claro e escuro, proporcionando uma experiência visual personalizada.
+<br><br>
+            <h2>Funcionalidades principais:</h2>
+            <ul>
+              <li>Adicionar tarefas dinamicamente.</li>
+
+              <li>Marcar tarefas como concluídas com apenas um clique.</li>
+
+              <li>Remover tarefas da lista.</li>
+              
+              <li>Alternar entre modo claro e escuro (dark mode) com suavidade.</li>
+
+              <li>Animação de background RGB dinâmico, dando um toque moderno ao visual.</li>
+            </ul>
+          </p>
+
+      <div class="icons">
+        <a href="https://github.com/EduuhSouza/Lista-de-Tarefas"><i class="fa-brands fa-github"></i> </a>
+          <a href="https://eduuhsouza.github.io/Lista-de-Tarefas/"><i class="fa-solid fa-globe"></i> </a>
+    </div>
+    </div>
+  </div>
+
+
+  <!-- ARTES -->
+<!-- ferramentas -->
+
+<h1 class="titulo-art" id="ia">Veja algumas das minhas artes</h1>
+
+<div class="titulo-ferramentas"><h1> Ferramentas Utilizadas </h1></div>
+
+
+<div class="ferramentas">
+    <div class="box-ferramentas">
+        <!-- CANVA -->
+
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/Canva-Logo-png-transparent-background.png" alt="">
+    </div>
+
+    <div class="box-ferramentas">
+        <!-- PICSART -->
+
+        <img src="https://play-lh.googleusercontent.com/B1ZyLqecayagX3dNJeg9f0tUS2HF4mwYWuLvVn9TBStQ3N-kgxoecN00INSaEgzoCSQ" alt="">
+    </div>
+
+    <div class="box-ferramentas">
+        <!-- INKSCAPE -->
+
+        <img src="https://i0.wp.com/www.albinoblacksheep.com/download/icon/inkscape.png" alt="">
+        
+    </div>
+
+    <div class="box-ferramentas">
+        <!-- Dream Ai WOOMBOO -->
+        <img src="https://play-lh.googleusercontent.com/8sF5ru5gJlm0QPnBPoWVhSRbPI1e_J15W13JaruMHFur-AdSZnaoTWgxFQ7b8eBZAlo" alt="">
+
+    </div>
+
+</div>
+
+<!-- DESCRIÇÃO SOBRE DESIGN -->
+
+<div class="sobre">
+    <p>Sou apaixonada por arte e design, e sempre busco explorar novas formas de expressão visual. O design gráfico é a minha forma de combinar criatividade com comunicação, transformando ideias em peças visuais impactantes. Adoro explorar diferentes estilos e técnicas, sempre com o objetivo de criar designs que transmitam a mensagem de forma clara e estética.
+        
+    </p>
+</div>
+
+<!-- IA -->
+<h1 class="galeria-h1" id="ia">Artes feitas com IA</h1><br>
+
+<div class="galeria-horizontal">
+  <div class="miniaturas-laterais-wrapper">
+    <button class="seta seta-cima">▲</button>
+
+    <div class="miniaturas-laterais" id="miniaturas-scroll">
+      <img src="design.arts/IA.jpg" alt="">
+      <img src="design.arts/IA7.jpeg" alt="">
+      <img src="design.arts/IA2.jpeg" alt="">
+      <img src="design.arts/IA3.jpeg" alt="">
+      <img src="design.arts/IA4.jpg" alt="">
+      <img src="design.arts/IA5.jpeg" alt="">
+      <img src="design.arts/IA6.jpeg" alt="">
+    </div>
+
+    <button class="seta seta-baixo">▼</button>
+  </div>
+
+  <div class="imagem-central">
+    <img src="design.arts/IA.jpg" alt="Imagem principal" class="imagem-principal ativo">
+  </div>
+</div>
+
+
+<!-- DESENHOS digitais -->
+<h1 class="galeria-h1" id="desenhos">Desenhos Digitais</h1><br>
+
+
+<div class="galeria-horizontal">
+    <div class="miniaturas-laterais-wrapper">
+      <button class="seta seta-cima">▲</button>
+  
+      <div class="miniaturas-laterais" id="miniaturas-scroll">
+        <img src="design.arts/digital.jpeg" alt="">
+        <img src="design.arts/digital2.jpeg" alt="">
+        <img src="design.arts/digital3.jpeg" alt="">
+        <img src="design.arts/digital4.jpeg" alt="">
+        <img src="design.arts/digital5.jpeg" alt="">
+        <img src="design.arts/wallpaper.red.digital.jpeg" alt="">
+        <img src="" alt="">
+      </div>
+  
+      <button class="seta seta-baixo">▼</button>
+    </div>
+  
+    <div class="imagem-central">
+      <img src="design.arts/digital6.jpeg" alt="Imagem principal" class="imagem-principal ativo">
+    </div>
+  </div>
+
+  <!-- SCRIPT DAS IMGS -->
+<script>
+    document.querySelectorAll('.galeria-horizontal').forEach(galeria => {
+      const imagemPrincipal = galeria.querySelector('.imagem-principal');
+      const miniaturas = galeria.querySelectorAll('.miniaturas-laterais img');
+  
+      miniaturas.forEach(miniatura => {
+        miniatura.addEventListener('click', () => {
+          imagemPrincipal.style.opacity = 0;
+  
+          setTimeout(() => {
+            imagemPrincipal.src = miniatura.src;
+            imagemPrincipal.style.opacity = 1;
+          }, 300);
+  
+          miniaturas.forEach(i => i.classList.remove('ativo'));
+          miniatura.classList.add('ativo');
+        });
+      });
+    });
+  
+    // Scroll com botões
+    const scrollContainer = document.getElementById("miniaturas-scroll");
+    const btnCima = document.querySelector(".seta-cima");
+    const btnBaixo = document.querySelector(".seta-baixo");
+  
+    btnCima.addEventListener("click", () => {
+      scrollContainer.scrollBy({ top: -100, behavior: "smooth" });
+    });
+  
+    btnBaixo.addEventListener("click", () => {
+      scrollContainer.scrollBy({ top: 100, behavior: "smooth" });
+    });
+  </script>
+  
+
+
+<!-------------- PARALLAX -------------->
+
+<div class="wrapper">
+    <section class="modulo parallax parallax-2">        
+    </section>
+
+    <section class="modulo content">
+        <div class="container">    
+        </div>
+</section>
+
+
+<!-- ------------CURSOS E DESENVOLVIMENTO------------ -->
+
+
+    <div class="titulo-curso">
+        <h1>Cursos e Formações</h1>
+    </div>
+
+    <!-------------- PAO -------------->
+    <div class="cursos" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    <div class="box-cursos">
+        <div class="data">
+            <p> <i class="fa-regular fa-clock"></i> 2024 - Atual</p>
+        </div>
+        <div class="curso-t">
+            <h3>Manutenção de Computadores</h3>
+            <p>Fundação O Pão dos Pobres Santo Antônio</p>
+        </div>
+    </div>
+
+    <!-------------- UNISINOs -------------->
+    <div class="box-cursos" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <div class="data">
+            <p> <i class="fa-regular fa-clock"></i> 2024 - Atual</p>
+        </div>
+
+        <div class="curso-t">
+            <h3>Faculdade de Marketing</h3>
+            <p>Universidade do Vale do Rio dos Sinos</p>
+        </div>
+    </div>
+
+</div>
+
+    <div class="cursos" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+       <!-- IOS -->
+       <div class="box-cursos">
+        <div class="data">
+            <p> <i class="fa-regular fa-clock"></i> 2023-2024</p>
+        </div>
+
+        <div class="curso-t">
+            <h3>Desenvolvimento Full Stack</h3>
+            <p>Instituto da Oportunidade Social</p>
+        </div>
+    </div>
+
+    <!-- ENJOY -->
+    <div class="box-cursos" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <div class="data">
+            <p> <i class="fa-regular fa-clock"></i> 2021 - 2021</p>
+        </div>
+
+        <div class="curso-t">
+            <h3>Marketing Digital</h3>
+            <p>Enjoy</p>
+        </div>
+    </div>
+    </div>
+
+
+</div>
+
+
+<!-------------- FOOTER----------------- -->
+
+
+<div class="footer-container">
+
+    <div class="social-icons">
+        <div class="social-icon">
+            <a href="https://www.linkedin.com/in/eduarda-souza-3157942b0/" class="icon1"> <i class="fa-brands fa-linkedin-in"></i></a>
+
+            <a href="https://github.com/EduuhSouza" class="icon3"> <i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.instagram.com/souza.eduuh/" class="icon2"> <i class="fa-brands fa-instagram"></i></a>
+        
+    </div>
+
+    <div class="footerNav" id="contato">
+        <a href=""> 
+            <i class="fa-solid fa-envelope"></i> eduardasouzak4@gmail.com </a>
+            <a href="index.html"> inicio </a>
+
+    </div>
+    <div class="footer-bottom">
+        Desenvolvido por Eduarda Souza | &real; 2024
+    </div>
+</div>
+</div>
+
+
+
+<!-- ACESSIBILIDADE -->
+<script src="https://cdn.userway.org/widget.js" data-account="kCDHqw9ltL"></script>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<!-- LIBRAS -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<!--DATA AOS -->
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
